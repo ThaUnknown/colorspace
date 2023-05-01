@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script type="module">
+const context = canvas.getContext('2d')
+context.fillStyle = '#f484a1'
+context.fillRect(0, 0, 100, 100)
+context.filter = 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'f\'><feColorMatrix type=\'matrix\' values=\'1.0863 -0.07226548 -0.01403452 0 0 0.09646584 0.84511892 0.05841524 0 0 -0.01410632 -0.02769368 1.0418 0 0 0 0 0 1 0\'/></filter></svg>#f")'
+context.fillRect(0, 100, 100, 100)
+  </script>
+</head>
+<body>
+  <canvas id="canvas" width="600" height="600"></canvas>
+</body>
+</html>

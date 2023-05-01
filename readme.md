@@ -1,0 +1,3 @@
+# JS colorspace conversions
+
+This is an utility for convering video colorspaces using SVG filter color matrixes, it might not be 100% accurate... oops...
