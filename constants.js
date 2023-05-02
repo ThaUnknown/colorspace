@@ -13,5 +13,5 @@ export const webYCbCrMap = {
   smpte170m: 'BT.601'
 }
 
-export const svgStart = 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'filter\'><feColorMatrix type=\'matrix\' values=\''
-export const svgEnd = '\'/></filter></svg>#filter")'
+export const svgStart = 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'f\'><feColorMatrix type=\'matrix\' values=\''
+export const svgEnd = '\'/></filter></svg>#f")'
