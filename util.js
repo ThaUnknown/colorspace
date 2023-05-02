@@ -50,7 +50,7 @@ export function matrixToSVGMatrix (matrix) {
   let out = ''
   for (const row of matrix) {
     for (const number of row) {
-      out += (+number.toFixed(8)).toString() + ' '
+      out += (+number.toFixed(4)).toString() + ' '
     }
     out += '0 0 '
   }
