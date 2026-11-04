@@ -15,6 +15,7 @@ for (const from of fromArr) {
     map[`${from} ${fromLevels}`] = {}
     for (const to of toArr) {
       for (const toLevels of Object.keys(levels)) {
+        if (from === to && fromLevels === toLevels) continue
         const matrix = convertColorSpace(matrixCoefficients[from], matrixCoefficients[to], levels[fromLevels], levels[toLevels])
         const offset = levelsOffset(levels[fromLevels], levels[toLevels])
         map[`${from} ${fromLevels}`][`${to} ${toLevels}`] = svg
